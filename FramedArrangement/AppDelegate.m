@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PDViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,8 +22,13 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    PDViewController *nameSomething = [[PDViewController alloc] init];
+    
+    self.window.rootViewController = nameSomething;
     
     return YES;
 }
+
+
 
 @end
